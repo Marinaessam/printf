@@ -1,8 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <limits.h>
+#include <stdlib.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -33,10 +36,10 @@ struct fmt
 
 /**
  * typedef struct fmt fmt_t - Struct op
- *
  * @fmt: format.
  * @fm_t: The function associated.
  */
+
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
